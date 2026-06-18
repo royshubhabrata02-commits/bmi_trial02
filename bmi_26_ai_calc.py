@@ -22,5 +22,5 @@ prompt = f"Act like an expert nutritionist, comment on the BMI with the followin
 
 
 if st.button("take AI opinion"):
-       response = client.models.generate_content(model="gemini-3.5-flash", contents= prompt)
+       response = client.models.generate_content(model="gemini-2.5-flash", contents= prompt)
        st.write(response.text)
